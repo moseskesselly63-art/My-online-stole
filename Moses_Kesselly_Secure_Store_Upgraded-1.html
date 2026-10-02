@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Moses Kesselly — premium digital products, ebooks, PDFs, logos, flyers and YouTube thumbnails.">
+<meta name="theme-color" content="#07080b"><title>Moses Kesselly | Digital Products & Creative Studio</title>
+<style>
+:root{--bg:#07080b;--panel:#101116;--text:#f6f2e8;--muted:#a7a9b2;--gold:#d9b45a;--gold2:#f4d88b;--line:rgba(255,255,255,.09);--shadow:0 25px 80px rgba(0,0,0,.45)}
+*{box-sizing:border-box;scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 85% 5%,rgba(217,180,90,.13),transparent 28%),radial-gradient(circle at 10% 20%,rgba(100,110,180,.10),transparent 25%),var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}a{text-decoration:none;color:inherit}button{font:inherit}.container{width:min(1180px,92%);margin:auto}
+.nav{position:sticky;top:0;z-index:50;background:rgba(7,8,11,.78);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.nav-inner{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font-weight:950;letter-spacing:.16em;font-size:15px}.brand span{color:var(--gold)}.navlinks{display:flex;gap:26px;color:#d7d7dc;font-size:14px}.navlinks a:hover{color:var(--gold2)}.nav-cta{padding:11px 17px;border:1px solid rgba(217,180,90,.45);border-radius:999px;color:var(--gold2);font-weight:800}
+.hero{min-height:720px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:55px;padding:70px 0 95px}.kicker{color:var(--gold2);font-size:12px;font-weight:900;letter-spacing:.22em;text-transform:uppercase}h1{font-size:clamp(48px,7vw,88px);line-height:.96;letter-spacing:-.055em;margin:18px 0 24px}h1 em{font-style:normal;color:var(--gold2)}.hero p{font-size:18px;line-height:1.7;color:var(--muted);max-width:650px}.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 20px;border-radius:12px;border:1px solid var(--line);font-weight:900;cursor:pointer;transition:.2s}.btn:hover{transform:translateY(-2px)}.primary{background:linear-gradient(135deg,var(--gold2),var(--gold));color:#111;border:0}.secondary{background:#111217;color:#f4f4f4}.hero-note{display:flex;gap:18px;flex-wrap:wrap;margin-top:30px;color:#8f929d;font-size:12px}.hero-note b{color:#eee}
+.portrait-wrap{position:relative;min-height:560px;display:flex;align-items:center;justify-content:center}.glow{position:absolute;inset:7% 8%;background:radial-gradient(circle,rgba(217,180,90,.32),transparent 62%);filter:blur(18px)}.portrait-card{position:relative;width:min(430px,90%);border:1px solid rgba(255,255,255,.13);border-radius:30px;overflow:hidden;box-shadow:var(--shadow);background:#17181d;transform:rotate(1.5deg)}.portrait-card img{display:block;width:100%;height:530px;object-fit:cover;object-position:center top;filter:saturate(1.04) contrast(1.02)}.portrait-overlay{position:absolute;inset:auto 0 0;padding:25px;background:linear-gradient(transparent,rgba(0,0,0,.9))}.portrait-overlay small{color:var(--gold2);letter-spacing:.18em;font-weight:900}.portrait-overlay strong{display:block;font-size:30px;margin-top:7px}.badge{position:absolute;right:-10px;top:38px;background:#111217;border:1px solid rgba(217,180,90,.5);padding:12px 15px;border-radius:15px;font-size:11px;font-weight:900;letter-spacing:.08em;box-shadow:var(--shadow)}
+section{padding:90px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:25px;margin-bottom:35px}.section-head h2{font-size:42px;letter-spacing:-.035em;margin:0 0 8px}.section-head p{color:var(--muted);margin:0;line-height:1.6}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.025));border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 12px 45px rgba(0,0,0,.18)}.product-visual{height:220px;padding:24px;display:flex;align-items:end;position:relative;overflow:hidden}.product-visual:after{content:"";position:absolute;width:170px;height:170px;border-radius:50%;right:-50px;top:-50px;background:rgba(255,255,255,.08)}.v-pdf{background:linear-gradient(135deg,#1d2a44,#75602a)}.v-logo{background:linear-gradient(135deg,#251c36,#a87f2b)}.v-flyer{background:linear-gradient(135deg,#182c28,#4c7b69)}.v-thumb{background:linear-gradient(135deg,#351b1b,#9d5c38)}.v-ebook{background:linear-gradient(135deg,#242331,#6b5b99)}.cover-label{position:relative;z-index:2;font-size:25px;line-height:1.02;font-weight:950;max-width:260px}.cover-label span{display:block;color:var(--gold2);font-size:11px;letter-spacing:.16em;margin-bottom:8px}.card-body{padding:22px}.card-body h3{font-size:22px;margin:0 0 8px}.card-body p{color:var(--muted);line-height:1.6;min-height:72px;margin:0}.meta{display:flex;justify-content:space-between;align-items:center;margin:20px 0 14px}.price{font-size:24px;font-weight:950}.tag{font-size:11px;color:var(--gold2);border:1px solid rgba(217,180,90,.28);border-radius:999px;padding:7px 9px}.full{width:100%}.split{display:grid;grid-template-columns:1fr 1fr;gap:22px}.feature{padding:35px;border:1px solid var(--line);border-radius:24px;background:linear-gradient(135deg,rgba(217,180,90,.10),rgba(255,255,255,.025))}.feature h3{font-size:25px;margin:0 0 10px}.feature p{color:var(--muted);line-height:1.7}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.step{padding:25px;border:1px solid var(--line);border-radius:18px;background:#0d0e12}.step b{display:block;color:var(--gold2);font-size:12px;letter-spacing:.15em;margin-bottom:14px}.step h3{margin:0 0 8px}.step p{color:var(--muted);line-height:1.55;font-size:14px}.cta{border:1px solid rgba(217,180,90,.28);border-radius:28px;padding:45px;background:radial-gradient(circle at 80% 20%,rgba(217,180,90,.15),transparent 35%),#101116}.cta h2{font-size:46px;letter-spacing:-.04em;margin:0 0 12px}.cta p{color:var(--muted);max-width:700px;line-height:1.7}footer{border-top:1px solid var(--line);padding:40px 0;color:#8e9099}.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.75);backdrop-filter:blur(8px);display:none;align-items:center;justify-content:center;padding:20px;z-index:100}.modal.show{display:flex}.modal-box{width:min(560px,100%);background:#111217;border:1px solid var(--line);border-radius:24px;padding:28px;box-shadow:var(--shadow)}.modal-box h3{font-size:28px;margin:0 0 8px}.modal-box p{color:var(--muted);line-height:1.6}.close{float:right;background:none;border:0;color:#aaa;font-size:25px;cursor:pointer}input,textarea{width:100%;background:#0a0b0e;border:1px solid var(--line);border-radius:12px;padding:13px;color:white;margin:7px 0 13px;outline:none}textarea{min-height:110px;resize:vertical}.notice{font-size:12px;color:#8e9099;margin-top:14px}.payment-box{margin-top:20px;padding:18px;border:1px solid rgba(217,180,90,.25);border-radius:16px;background:rgba(217,180,90,.06)}.payment-box h4{margin:0 0 12px;font-size:16px}.pay-option{padding:13px 0;border-top:1px solid var(--line);display:grid;gap:4px}.pay-option:first-of-type{border-top:0}.pay-option span,.pay-option small{color:var(--muted);line-height:1.5}.pay-option strong{color:#fff}
+@media(max-width:900px){.hero{grid-template-columns:1fr;padding-top:45px}.grid{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.navlinks{display:none}.portrait-wrap{min-height:520px}}
+@media(max-width:620px){.hero{padding-bottom:55px}.grid,.split,.steps{grid-template-columns:1fr}.section-head{display:block}.section-head h2{font-size:34px}.cta h2{font-size:35px}.portrait-card img{height:470px}.portrait-wrap{min-height:490px}.nav-cta{display:none}}
+
+.lock-badge{position:absolute;right:16px;top:16px;z-index:3;background:rgba(0,0,0,.62);border:1px solid rgba(255,255,255,.18);padding:7px 10px;border-radius:999px;font-size:10px;font-weight:900;letter-spacing:.08em}
+.secure-panel{margin-top:28px;padding:28px;border:1px solid rgba(217,180,90,.25);border-radius:24px;background:linear-gradient(135deg,rgba(217,180,90,.08),rgba(255,255,255,.025));display:flex;align-items:center;justify-content:space-between;gap:25px}
+.secure-panel h3{font-size:27px;margin:8px 0}.secure-panel p{color:var(--muted);line-height:1.6;margin:0;max-width:680px}
+.dashboard{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:20px}.dash-box{padding:20px;border:1px solid var(--line);border-radius:18px;background:#0d0e12}.dash-box h4{margin:0 0 10px;font-size:18px}.dash-box p{color:var(--muted);line-height:1.55}.chat-log{height:260px;overflow:auto;padding:12px;background:#090a0d;border:1px solid var(--line);border-radius:14px}.chat-msg{padding:10px 12px;margin:8px 0;border-radius:12px;background:#15161c;line-height:1.45}.chat-msg.me{background:rgba(217,180,90,.13);border:1px solid rgba(217,180,90,.15)}.order-list{display:grid;gap:10px}.order-item{padding:13px;border:1px solid var(--line);border-radius:12px;background:#0a0b0e}.status{font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:var(--gold2);font-weight:900}
+@media(max-width:700px){.secure-panel,.dashboard{grid-template-columns:1fr;display:grid}}
+</style></head>
+<body>
+<nav class="nav"><div class="container nav-inner"><a class="brand" href="#">MOSES <span>KESSELLY</span></a><div class="navlinks"><a href="#shop">Shop</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></div><a class="nav-cta" href="#shop">Enter Store →</a></div></nav>
+<main>
+<section class="container hero"><div><div class="kicker">Digital Products • Creative Studio • Online Business</div><h1>Turn ideas into <em>valuable digital products.</em></h1><p>Welcome to the premium digital studio of <b style="color:#fff">Moses Kesselly</b> — a modern storefront for ebooks, PDFs, creative resources, professional logos, flyers and high-impact YouTube thumbnails.</p><div class="actions"><a class="btn primary" href="#shop">Explore the Store</a><a class="btn secondary" href="#services">View Creative Services</a></div><div class="hero-note"><span>✓ <b>Digital delivery</b></span><span>✓ <b>Premium presentation</b></span><span>✓ <b>Worldwide-ready storefront</b></span></div></div><div class="portrait-wrap"><div class="glow"></div><div class="portrait-card"><img src="assets/moses-kesselly-portrait.png" alt="Moses Kesselly"><div class="portrait-overlay"><small>FOUNDER • CREATIVE DIRECTOR</small><strong>Moses Kesselly</strong></div></div><div class="badge">MOSES KESSELLY<br><span style="color:#d9b45a">DIGITAL STUDIO</span></div></div></section>
+<section id="shop">
+  <div class="container">
+    <div class="section-head">
+      <div><h2>Featured Store</h2><p>Digital products are visible to everyone, but protected files are released only after payment is verified.</p></div>
+      <div class="tag">SECURE DIGITAL DELIVERY</div>
+    </div>
+    <div class="grid" id="productGrid">
+      <article class="card product-card" data-product-id="global-online-income-playbook" data-price="15" data-type="digital">
+        <div class="product-visual v-pdf"><div class="cover-label"><span>FEATURED PDF</span>The Global Online Income Playbook</div><div class="lock-badge">🔒 PROTECTED</div></div>
+        <div class="card-body">
+          <h3>Global Online Income Playbook</h3>
+          <p>A practical guide to skills, freelancing, AI-assisted services, digital products, content and online business systems.</p>
+          <div class="meta"><div class="price">$15</div><div class="tag">PDF • LOCKED</div></div>
+          <button class="btn primary full" onclick="openPurchase('global-online-income-playbook','Global Online Income Playbook',15,'PDF')">Buy & Unlock</button>
+          <button class="btn secondary full" style="margin-top:9px" onclick="openChat('I am interested in the Global Online Income Playbook.')">Ask Before Buying</button>
+        </div>
+      </article>
+
+      <article class="card product-card" data-product-id="premium-ebooks" data-price="8" data-type="digital">
+        <div class="product-visual v-ebook"><div class="cover-label"><span>KNOWLEDGE</span>Premium Ebooks & Guides</div><div class="lock-badge">🔒 PROTECTED</div></div>
+        <div class="card-body">
+          <h3>Ebooks & Educational PDFs</h3>
+          <p>Premium guides, learning resources, business playbooks and practical documents prepared for digital delivery.</p>
+          <div class="meta"><div class="price">From $8</div><div class="tag">DIGITAL • LOCKED</div></div>
+          <button class="btn primary full" onclick="openChat('I want to order an Ebook / Educational PDF. Please show me the available products.')">Order / Ask</button>
+        </div>
+      </article>
+
+      <article class="card" id="client-order-card"><div class="product-visual v-logo"><div class="cover-label"><span>CLIENT ORDERS</span>Custom Design Work</div></div>
+        <div class="card-body"><h3>Logo Design</h3><p>Modern, memorable logo concepts designed to make a business look credible, valuable and ready for the market.</p>
+        <div class="meta"><div class="price">From $20</div><div class="tag">CUSTOM</div></div>
+        <button class="btn primary full" onclick="openOrder('Logo Design')">Request a Logo</button></div>
+      </article>
+
+      <article class="card"><div class="product-visual v-flyer"><div class="cover-label"><span>MARKETING</span>Professional Flyer Design</div></div>
+        <div class="card-body"><h3>Flyer Design</h3><p>Promotional flyers for businesses, events, products, churches, campaigns and social media marketing.</p>
+        <div class="meta"><div class="price">Custom</div><div class="tag">FAST DELIVERY</div></div>
+        <button class="btn primary full" onclick="openOrder('Flyer Design')">Request a Flyer</button></div>
+      </article>
+
+      <article class="card"><div class="product-visual v-thumb"><div class="cover-label"><span>YOUTUBE / SOCIAL</span>High-Impact Thumbnails</div></div>
+        <div class="card-body"><h3>YouTube Thumbnail Design</h3><p>Attention-grabbing thumbnails built to communicate the video idea quickly and make viewers want to click.</p>
+        <div class="meta"><div class="price">From $20</div><div class="tag">CREATOR</div></div>
+        <button class="btn primary full" onclick="openOrder('YouTube Thumbnail Design')">Request Thumbnails</button></div>
+      </article>
+    </div>
+
+    <div class="secure-panel">
+      <div><span class="kicker">BUYER ACCESS</span><h3>Your Digital Library</h3><p>After your payment is verified, your purchased PDF or Ebook can be attached to your order and made available in your private library.</p></div>
+      <button class="btn secondary" onclick="openLibrary()">Open My Library</button>
+    </div>
+  </div>
+</section>
+
+<section id="services"><div class="container"><div class="section-head"><div><h2>Built for value</h2><p>A premium experience for both buyers and design clients.</p></div></div><div class="split"><div class="feature"><h3>For digital-product buyers</h3><p>Find useful PDFs, ebooks and resources in one clean storefront. The first featured product is already connected to this website package for preview. Your real checkout link can be connected before launch.</p></div><div class="feature"><h3>For design clients</h3><p>Send your brief, reference images, text and preferred style. Your order can be turned into a professional logo, flyer or thumbnail package with a clear delivery workflow.</p></div></div></div></section>
+<section id="about"><div class="container"><div class="section-head"><div><h2>The Moses Kesselly standard</h2><p>Learn. Create. Package. Sell. Grow.</p></div></div><div class="steps"><div class="step"><b>01 — DISCOVER</b><h3>Find the need</h3><p>Identify what a customer wants to learn, buy or promote.</p></div><div class="step"><b>02 — CREATE</b><h3>Build the value</h3><p>Create useful content or visual design that solves the real problem.</p></div><div class="step"><b>03 — PACKAGE</b><h3>Make it premium</h3><p>Present the product with strong branding, clear benefits and a polished experience.</p></div><div class="step"><b>04 — DELIVER</b><h3>Serve the buyer</h3><p>Deliver professionally, communicate clearly and build repeat customers.</p></div></div></div></section>
+<section id="contact"><div class="container"><div class="cta"><h2>Have a project in mind?</h2><p>Use the order form to prepare a professional request for a logo, flyer, thumbnail, ebook or PDF. You can copy the finished request and send it through your preferred messaging or email service.</p><button class="btn primary" onclick="order('General Project')">Start an Order</button></div></div></section>
+</main>
+<footer><div class="container footer-inner"><div>© 2026 <b>Moses Kesselly</b> • Digital Products & Creative Studio</div><div>PDFs • Ebooks • Logos • Flyers • Thumbnails</div><div class="actions" style="margin:0"><button class="btn secondary" onclick="openChat()">💬 Client Chat</button><button class="btn secondary" onclick="securityInfo()">🔐 Security</button></div></div></footer>
+<div class="modal" id="modal">
+  <div class="modal-box">
+    <button class="close" onclick="closeModal()">×</button>
+    <h3 id="modalTitle">Secure Store</h3>
+    <p id="modalText">Complete the form below.</p>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<script>
+/*
+  SECURITY NOTE:
+  This file is a secure-minded FRONT END. Real payment verification, private
+  file storage, authentication and access control MUST run on a server.
+  Never put private PDF URLs, payment API secrets, admin passwords or private
+  credentials in this HTML file.
+*/
+const STORE = {
+  currency: "USD",
+  paymentNumber: "+231 778 108 796",
+  accountName: "Moses Kesselly",
+  sendwave: "+231 778 108 796"
+};
+
+const state = {
+  orders: JSON.parse(localStorage.getItem("mk_orders") || "[]"),
+  messages: JSON.parse(localStorage.getItem("mk_messages") || "[]"),
+  library: JSON.parse(localStorage.getItem("mk_library") || "[]")
+};
+
+function saveState(){
+  localStorage.setItem("mk_orders", JSON.stringify(state.orders));
+  localStorage.setItem("mk_messages", JSON.stringify(state.messages));
+  localStorage.setItem("mk_library", JSON.stringify(state.library));
+}
+
+function esc(v){
+  return String(v).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function showModal(title,text,content){
+  document.getElementById("modalTitle").textContent=title;
+  document.getElementById("modalText").textContent=text;
+  document.getElementById("modalContent").innerHTML=content;
+  document.getElementById("modal").classList.add("show");
+}
+function closeModal(){document.getElementById("modal").classList.remove("show");}
+document.getElementById("modal").addEventListener("click",e=>{if(e.target.id==="modal")closeModal()});
+
+function openPurchase(id,name,price,type){
+  showModal("Purchase & Unlock", "Your file stays locked until payment is verified.", `
+    <label>Your name</label><input id="buyerName" autocomplete="name" placeholder="Your name">
+    <label>Email or phone</label><input id="buyerContact" autocomplete="email" placeholder="Email or phone for delivery">
+    <div class="payment-box">
+      <h4>Payment options</h4>
+      <div class="pay-option"><b>📱 Mobile Money</b><span>Send ${esc(price)} ${STORE.currency} to <strong>${esc(STORE.paymentNumber)}</strong></span><small>Account name: ${esc(STORE.accountName)}</small></div>
+      <div class="pay-option"><b>🌍 Sendwave</b><span>Send using Sendwave to <strong>${esc(STORE.sendwave)}</strong></span><small>Account name: ${esc(STORE.accountName)}</small></div>
+    </div>
+    <label>Payment reference / transaction ID</label><input id="paymentRef" placeholder="Enter your transaction reference">
+    <button class="btn primary full" onclick="submitPayment('${esc(id)}','${esc(name)}',${Number(price)},'${esc(type)}')">Submit Payment for Verification</button>
+    <div class="notice">Do not upload or paste passwords, PINs, card numbers or private keys. Only provide a payment reference.</div>
+  `);
+}
+
+function submitPayment(id,name,price,type){
+  const buyer= document.getElementById("buyerName").value.trim();
+  const contact= document.getElementById("buyerContact").value.trim();
+  const ref= document.getElementById("paymentRef").value.trim();
+  if(!buyer || !contact || !ref){alert("Please complete your name, contact and payment reference.");return;}
+  const order={
+    id:"ORD-"+Date.now(), productId:id, product:name, type, price,
+    buyer, contact, paymentRef:ref, status:"payment_pending",
+    createdAt:new Date().toISOString()
+  };
+  state.orders.unshift(order); saveState();
+  closeModal();
+  alert("Payment submitted. Your product remains locked until the payment is verified.");
+}
+
+function openLibrary(){
+  const items=state.library;
+  const body=items.length ? items.map(x=>`<div class="order-item"><b>${esc(x.product)}</b><div class="status">Payment verified</div><p>${esc(x.deliveryNote||"Your protected file is available from your private account.")}</p><button class="btn primary" onclick="openProtectedFile('${esc(x.fileUrl||"")}')">Open Product</button></div>`).join("") : `<div class="notice">No paid products are unlocked yet.</div>`;
+  showModal("My Digital Library","Only products attached to verified purchases should appear here.", `<div class="order-list">${body}</div>`);
+}
+
+function openProtectedFile(url){
+  if(!url){alert("The product has not been securely attached yet. The seller must complete delivery after payment verification.");return;}
+  // In production this must be a short-lived authenticated download URL generated by the server.
+  window.open(url,"_blank","noopener,noreferrer");
+}
+
+function openChat(prefill=""){
+  showModal("Client Chat","Send a message about a product or order.", `
+    <div id="chatLog" class="chat-log">${renderChat()}</div>
+    <textarea id="chatInput" placeholder="Write your message...">${esc(prefill)}</textarea>
+    <button class="btn primary full" onclick="sendChat()">Send Message</button>
+    <div class="notice">For a real cross-device chat, connect this interface to a secure backend or realtime database. Messages stored here are only on this browser.</div>
+  `);
+  const log=document.getElementById("chatLog"); if(log) log.scrollTop=log.scrollHeight;
+}
+function renderChat(){
+  if(!state.messages.length) return '<div class="notice">No messages yet. Start the conversation.</div>';
+  return state.messages.map(m=>`<div class="chat-msg ${m.from==="client"?"me":""}"><b>${m.from==="client"?"You":"Moses Kesselly"}</b><br>${esc(m.text)}<div class="notice">${new Date(m.time).toLocaleString()}</div></div>`).join("");
+}
+function sendChat(){
+  const input=document.getElementById("chatInput"); if(!input || !input.value.trim()) return;
+  state.messages.push({from:"client",text:input.value.trim(),time:new Date().toISOString()}); saveState(); openChat();
+}
+
+function openOrder(service){
+  showModal("Client Order","Prepare your order and send the details.", `
+    <label>Your name</label><input id="orderName" autocomplete="name" placeholder="Your name">
+    <label>Email or phone</label><input id="orderContact" placeholder="Email or phone">
+    <label>Service</label><input id="orderService" value="${esc(service)}" readonly>
+    <label>Order details</label><textarea id="orderDetails" placeholder="Quantity, text, colors, deadline, references and instructions."></textarea>
+    <button class="btn primary full" onclick="submitClientOrder()">Send Order</button>
+    <button class="btn secondary full" style="margin-top:9px" onclick="openChat()">Chat With Moses</button>
+  `);
+}
+function submitClientOrder(){
+  const buyer=document.getElementById("orderName").value.trim();
+  const contact=document.getElementById("orderContact").value.trim();
+  const service=document.getElementById("orderService").value;
+  const details=document.getElementById("orderDetails").value.trim();
+  if(!buyer||!contact||!details){alert("Please complete your name, contact and order details.");return;}
+  state.orders.unshift({id:"ORD-"+Date.now(),product:service,type:"custom",buyer,contact,details,status:"new",createdAt:new Date().toISOString()});
+  saveState(); closeModal(); alert("Your order has been saved. Open Client Chat to continue the conversation.");
+}
+
+function openAdmin(){
+  const orders=state.orders;
+  const messages=state.messages;
+  showModal("Owner Dashboard","This is a local front-end dashboard. A production owner account must be protected by server authentication.", `
+    <div class="dashboard">
+      <div class="dash-box"><h4>Orders</h4><p>${orders.length} order(s) saved on this browser.</p><div class="order-list">${orders.slice(0,8).map(o=>`<div class="order-item"><b>${esc(o.product)}</b><br>${esc(o.buyer||"")}<br><span class="status">${esc(o.status)}</span></div>`).join("")||'<div class="notice">No orders yet.</div>'}</div></div>
+      <div class="dash-box"><h4>Client Chat</h4><p>${messages.length} message(s) saved on this browser.</p><button class="btn primary full" onclick="openChat()">Open Chat</button></div>
+      <div class="dash-box"><h4>Products</h4><p>Add unlimited product records in the production database. Files should be stored privately, not in this HTML.</p><button class="btn secondary full" onclick="showProductUploader()">Add Product</button></div>
+      <div class="dash-box"><h4>Security</h4><p>Keep payment secrets and private files on the server. Use HTTPS, authentication, rate limits, secure sessions and verified payment webhooks.</p></div>
+    </div>
+  `);
+}
+
+function showProductUploader(){
+  showModal("Add Product","This browser form prepares product metadata. A production backend must receive and privately store the file.", `
+    <label>Product name</label><input id="newProductName" placeholder="Product name">
+    <label>Price</label><input id="newProductPrice" type="number" min="0" step="0.01" placeholder="15">
+    <label>Cover image URL</label><input id="newProductImage" placeholder="https://...">
+    <label>Private file</label><input id="newProductFile" type="file" accept=".pdf,.epub">
+    <button class="btn primary full" onclick="prepareProduct()">Save Product Record</button>
+    <div class="notice">Do not treat localStorage as secure storage. It is only a front-end prototype.</div>
+  `);
+}
+function prepareProduct(){
+  const name=document.getElementById("newProductName").value.trim();
+  const price=document.getElementById("newProductPrice").value;
+  if(!name||price===""){alert("Enter a product name and price.");return;}
+  alert("Product metadata prepared. Connect the Save Product action to your secure server/database to make it available across devices.");
+}
+
+function securityInfo(){
+  showModal("Security & Privacy","Important protection for your store.",`
+    <div class="dash-box">
+      <p><b>Protected downloads:</b> never expose permanent PDF/Ebook URLs publicly.</p>
+      <p><b>Payments:</b> verify payments server-side or with a trusted payment provider webhook before granting access.</p>
+      <p><b>Accounts:</b> use strong passwords, secure cookies, HTTPS, CSRF protection and rate limiting.</p>
+      <p><b>Admin:</b> the owner dashboard must require server authentication. Never put an admin password in JavaScript.</p>
+      <p><b>Files:</b> store products outside the public web directory or in private object storage and issue short-lived download links after verification.</p>
+      <p><b>Payment privacy:</b> this page does not ask for your Mobile Money PIN, Sendwave password, card PIN or private credentials.</p>
+    </div>
+  `);
+}
+
+/* Compatibility with the original buttons/functions. */
+function buy(product){openPurchase("legacy-"+product.toLowerCase().replace(/[^a-z0-9]+/g,"-"),product,15,"PDF");}
+function order(product){openOrder(product);}
+
+/* Add owner controls without changing the main navigation. */
+document.addEventListener("keydown",e=>{
+  if(e.altKey && e.shiftKey && e.key.toLowerCase()==="m") openAdmin();
+  if(e.altKey && e.shiftKey && e.key.toLowerCase()==="s") securityInfo();
+});
+</script></body></html>
